@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Form Login</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="validar">Validar senha</string>
+    <string name="nao_validar">Não validar senha</string>
+    <string name="bem_vindo">Seja bem-vindo, </string>
+    <string name="senha_incorreta">Senha incorreta.</string>
+    <string name="sem_validacao">A senha não foi validada.</string>
+
+</resources>
