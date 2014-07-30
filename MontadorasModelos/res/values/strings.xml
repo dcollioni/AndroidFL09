@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Montadoras Modelos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="montadoras">Montadoras:</string>
+    <string name="modelos">Modelos:</string>
+    
+    <string-array name="montadoras">
+        <item>Fiat</item>
+        <item>Ford</item>
+        <item>GM</item>
+        <item>Volkswagen</item>
+    </string-array>
+
+</resources>
