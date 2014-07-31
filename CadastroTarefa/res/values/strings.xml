@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cadastro Tarefa</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="nova_tarefa">Nova tarefa</string>
+    <string name="incluir">Incluir</string>
+    
+    <string-array name="tarefas">
+        <item>Estudar Android</item>
+        <item>Ficar rico</item>
+        <item>Dominar o mundo</item>
+        <item>Jogar Call of Duty</item>
+    </string-array>
+
+</resources>
