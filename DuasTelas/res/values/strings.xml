@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Duas Telas</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="n1">N 1</string>
+    <string name="n2">N 2</string>
+    <string name="somar">Somar</string>
+    <string name="title_activity_resultado">Resultado</string>
+    <string name="resultado">Resultado</string>
+    <string name="voltar">Voltar</string>
+
+</resources>
