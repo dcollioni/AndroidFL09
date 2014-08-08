@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item 
+        android:id="@+id/ver_icone"
+        android:title="@string/ver" />
+    
+    <item 
+        android:id="@+id/ocultar_icone"
+        android:title="@string/ocultar" />
+
+</menu>

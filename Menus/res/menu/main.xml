@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.edu.qi.menus.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_launcher"/>
+    
+    <item
+        android:id="@+id/ajuda"
+        android:orderInCategory="400"
+        android:title="@string/ajuda" />
+    
+    <item
+        android:id="@+id/abrir_cadastro"
+        android:orderInCategory="200"
+        android:title="@string/abrir_cadastro" />
+    
+    <item
+        android:title="@string/relatorios"
+      	android:orderInCategory="300">
+        <menu>
+            <item
+                android:id="@+id/relatorio1"
+                android:title="@string/relatorio1" />
+            <item
+                android:id="@+id/relatorio2"
+                android:title="@string/relatorio2" />
+        </menu>    
+    </item>
+
+</menu>

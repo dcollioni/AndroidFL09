@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Menus</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ajuda">Ajuda</string>
+    <string name="abrir_cadastro">Abrir cadastro</string>
+    <string name="relatorios">Relatórios</string>
+    <string name="relatorio1">Relatório 1</string>
+    <string name="relatorio2">Relatório 2</string>
+    <string name="title_activity_relatorio">Relatório</string>
+    <string name="voltar">Voltar</string>
+    <string name="title_activity_lista">Lista</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
+    <string name="imagem">Imagem</string>
+    <string name="ver">Ver</string>
+    <string name="ocultar">Ocultar</string>
+    
+    <string-array name="pessoas">
+        <item>Ana</item>
+        <item>Bruna</item>
+        <item>Carlos</item>
+        <item>Diego</item>
+    </string-array>
+
+</resources>
