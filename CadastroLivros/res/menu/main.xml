@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="collioni.douglas.cadastrolivros.MainActivity" >
+
+    <item
+        android:id="@+id/novo_livro"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/novo_livro"
+        android:icon="@android:drawable/ic_menu_add" />
+
+</menu>

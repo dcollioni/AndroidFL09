@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cadastro Livros</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo">Título</string>
+    <string name="autor">Autor</string>
+    <string name="ano">Ano</string>
+    <string name="paginas">N. Páginas</string>
+    <string name="isbn">ISBN</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="novo_livro">Novo Livro</string>
+    <string name="editar_livro">Editar Livro</string>
+    <string name="excluir_livro">Excluir Livro</string>
+
+    <string-array name="categorias">
+        <item>Biografia</item>
+        <item>Científico</item>
+        <item>Ficção</item>
+        <item>Infantil</item>
+        <item>Poesia</item>
+        <item>Romance</item>
+    </string-array>
+
+    <string name="title_activity_form">Livro</string>
+
+</resources>
