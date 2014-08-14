@@ -6,12 +6,15 @@ import java.util.List;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.AdapterView.AdapterContextMenuInfo;
 
 public class MainActivity extends Activity {
 
@@ -22,6 +25,8 @@ public class MainActivity extends Activity {
 	ArrayAdapter<Livro> adapter;
 	
 	long livroID;
+	
+	final int MENU_EXCLUIR = 1;
 	
 	private void configurarLista() {
 		lvLivros = (ListView)findViewById(R.id.lvLivros);
@@ -72,6 +77,54 @@ public class MainActivity extends Activity {
 				startActivity(i);
 			}
 		});
+        
+        registerForContextMenu(lvLivros);
+    } // fecha método
+    
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v,
+    		ContextMenuInfo menuInfo) {
+    	
+    	if (v.getId() == R.id.lvLivros) {
+    		// adiciona o item "Excluir" no menu de contexto
+    		menu.add(1, MENU_EXCLUIR, 100, R.string.excluir_livro);
+    		
+    		// pega um objeto adapter do menu
+    		AdapterContextMenuInfo adapter = (AdapterContextMenuInfo)
+    											menuInfo;
+    		
+    		// pega o livro clicado pela posição na lista
+    		Livro livro = (Livro)
+    					lvLivros.getItemAtPosition(adapter.position);
+    		
+    		// pega o ID do livro no banco de dados
+    		livroID = db4o.db().ext().getID(livro);
+    	}
+    	
+    	super.onCreateContextMenu(menu, v, menuInfo);
+    } // fecha método
+    
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+    	// pega o id do item clicado
+    	int id = item.getItemId();
+    	
+    	// verifica se é a opção "Excluir livro"
+    	if (id == MENU_EXCLUIR) {
+    		// pega o livro do banco de dados pelo ID
+    		Livro livro = db4o.db().ext().getByID(livroID);
+    		
+    		// exclui o livro no banco
+    		db4o.db().delete(livro);
+    		
+    		// confirma a operação
+    		db4o.db().commit();
+    		
+    		// recarrega a lista de livros
+    		carregarLivros();
+    	}
+    	
+    	return super.onContextItemSelected(item);
     } // fecha método
     
     @Override

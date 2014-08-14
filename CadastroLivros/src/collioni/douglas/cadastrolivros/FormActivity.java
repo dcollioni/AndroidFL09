@@ -56,6 +56,14 @@ public class FormActivity extends Activity {
 				salvarLivro();
 			} // fecha método
 		});
+		
+		btnCancelar.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				finish();
+			}
+		});
 	} // fecha método
 	
 	private void salvarLivro() {
